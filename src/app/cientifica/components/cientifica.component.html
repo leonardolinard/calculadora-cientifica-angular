@@ -1,0 +1,38 @@
+<div class="container my-4">
+
+    <div class="calculadora">
+
+        <input type="text" class="display" name="display" [value]="display" disabled>
+
+        <div class="btn_calculadora">
+
+            <button type="button" class="btn btn-warning" (click)="definirOperacao('raiz')">&radic;</button>
+            <button type="button" class="btn btn-warning" (click)="definirOperacao('quad')">x<sup>2</sup></button>
+            <button type="button" class="btn btn-warning" (click)="definirOperacao('cubo')">x<sup>3</sup></button>
+            <button type="button" class="btn btn-warning" (click)="adicionaNumero('3.1415926')">&pi;</button>
+
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('7')">7</button>
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('8')">8</button>
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('9')">9</button>
+            <button type="button" class="btn btn-info" (click)="definirOperacao('/')">&divide;</button>
+
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('4')">4</button>
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('5')">5</button>
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('6')">6</button>
+            <button type="button" class="btn btn-info" (click)="definirOperacao('*')">&times;</button>
+
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('1')">1</button>
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('2')">2</button>
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('3')">3</button>
+            <button type="button" class="btn btn-info" (click)="definirOperacao('-')">-</button>
+
+            <button type="button" class="btn btn-light" (click)="adicionaNumero('0')">0</button>
+            <button type="button" class="btn btn-secondary" (click)="adicionaNumero('.')">.</button>
+            <button type="button" class="btn btn-danger" (click)="limpar()">CE</button>
+            <button type="button" class="btn btn-info" (click)="definirOperacao('+')">+</button>
+
+            <button type="button" class="btn_resultado btn btn-primary" value="=" (click)="calcular()">=</button>
+
+        </div>
+    </div>
+</div>
